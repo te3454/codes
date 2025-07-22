@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#0d1b2a, #1b263b);
+  color: white;
+  text-align: center;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.game-container {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  margin: 20px auto;
+  background-color: #222;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp7LhW500rms7UNvuVyY--E0b7k9VSMsIE-A&s');
+  border: 3px solid #555;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.player {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqAhTmcVCyHc21UF_hcTXGm2XbkvtChc0o0A&s') no-repeat center;
+  background-size: cover;
+  bottom: 10px;
+  left: 180px;
+}
+
+.bullet {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background: yellow;
+}
+
+
+.enemy {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Xf0rqiohKAAy1TZkE2LQoLIzdSRKgM7d4-G136fg6V0oKEM8mBiMJwo&s') no-repeat center;
+  background-size: cover;
+}
+
+
+.score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+}
+ 
+  
