@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html forms</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f6f8;
+        padding: 40px;
+        margin: 0;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    form {
+        max-width: 600px;
+        margin: auto;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    form div {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+        color: #444;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 15px;
+        transition: border-color 0.3s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+    select {
+        background-color: #fff;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 8px;
+        transform: scale(1.2);
+    }
+
+    button {
+        width: 100%;
+        background-color: #007bff;
+        color: white;
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    p {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+        form {
+            padding: 20px;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <h1>forms in html</h1>
+    <form action="/submit.php">
+        <div>
+            <label for="name">name</label>
+            <input id="name" type="text" placeholder="enter name"required>
+        </div>
+        <div>
+            <label for="phone">phone</label>
+            <input id="phone" type="tel" placeholder="enter phone"required>
+        </div>
+         <div>
+            <label for="email">email</label>
+            <input id="email" type="email" placeholder="enter email"required>
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input id="password" type="password" placeholder="enter password"required>
+        </div>
+         <div>
+            <label for="dob">date of birth</label>
+            <input id="dob" type="data" required>
+        </div>
+        <div>
+            <label for="gender">gender</label>
+            <select  id="gender" required>
+                <option value=""disabled selected>select gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="others">others</option>
+            </select>
+        </div>
+        <div>
+            <p>subscription plan</p>
+            <input type="radio" name="subscription" id="basic" value="basic">
+            <label for="basic">basic</label>
+            <input type="radio" name="subscription" id="premium" value="premium">
+            <label for="premium">premium</label>
+            <input type="radio" name="subscription" id="vip" value="vip">
+            <label for="vip">vip</label>
+        </div>
+        <div>
+            <input type="checkbox" id="terms"required>
+            <label for="terms">i agree trems and conditions</label>
+        </div>
+        <div>
+            <label for="comments">comments</label>
+            <textarea  id="comments" placeholder="enter your comments" rows="4"></textarea>
+        </div>
+        <div>
+            <button type="submit">submit</button>
+        </div>
+
+    </form>
+
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travelling websites</title>
+    <style>/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page background and typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #fff);
+    padding: 40px;
+    color: #333;
+}
+
+/* Form container */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1976d2;
+}
+
+/* Form fields */
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+
+/* Button style */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #1976d2;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+}
+</style>
+</head>
+<body>
+    <h1>travel booking</h1>
+    <form action="/submit.php">
+        <div>
+            <label for="name">name</label>
+            <input id="name" type="text" placeholder="enter name"required>
+        </div>
+        <div>
+            <label for="phone">phone</label>
+            <input id="phone" type="tel" placeholder="enter phone"required>
+        </div>
+        <div>
+            <label for="age">age</label>
+            <input id="age" type="num" placeholder="enter age"required>
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input id="email" type="text" placeholder="enter email"required>
+        </div>
+         <div>
+            <label for="address">address</label>
+            <textarea  id="address" name="address"></textarea>
+        </div>
+        <div>
+            <button type="submit">submit</button>
+        </div>
+
+    </form>
+        
+    
+</body>
+</html>

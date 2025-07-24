@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables-html</title>
+    <style>
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px 16px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e9f5e9;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        text-align: left;
+        padding-left: -50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 16px;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    thead {
+        display: none;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>tables in html</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>
+name
+                </th>
+                <th>role</th>
+                <th>salery</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>ali</td>
+            <td>dvelepor</td>
+            <td>120000</td>
+
+        </tr>
+        <tr>
+            <td>ahmad</td>
+            <td>helper</td>
+            <td>12000</td>
+
+        </tr>
+        <tr>
+            <td>saad</td>
+            <td>enginier</td>
+            <td>1200000</td>
+
+        </tr>
+        <tr>
+            <td>abdullah</td>
+            <td>ca star</td>
+            <td>1200000</td>
+
+        </tr>
+        <tr>
+            <td colspan="2">thank</td>
+            <td >you</td>
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
